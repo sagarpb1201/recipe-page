@@ -82,13 +82,13 @@ body{
 
 .recipe{
     width: 100%;
-    max-width: 20rem;
-    margin: 0 auto;
-    margin-top: var(--space-lg);
+    max-width: 100%;
+    padding: var(--space-lg);
 }
 
 .recipe__image-wrapper{
-    margin-inline: -1rem;
+    margin-inline: -1.5rem;
+    margin-top: -1.5rem;
 }
 
 .recipe-img{
@@ -164,11 +164,26 @@ body{
 }
 
 @media (min-width:768px){
-    .recipe{
-        max-width:56rem;
+    body{
+        background-color: var(--color-stone-100);
+        padding: var(--space-xl);
     }
-    img{
-        max-width: 20rem;
-        width: 100%;
+    
+    .recipe{
+        max-width: 46rem;
+        margin: 0 auto;
+        background-color: var(--color-white);
+        border-radius: var(--border-lg);
+        padding: var(--space-xl);
+    }
+    
+    .recipe__image-wrapper{
+        margin-inline: 0;
+        margin-top: 0;
+        margin-bottom: var(--space-xl);
+    }
+    
+    .recipe-img{
+        border-radius: var(--border-md);
     }
 }
