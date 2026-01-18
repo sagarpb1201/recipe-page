@@ -131,6 +131,11 @@ body{
     padding: var(--space-xl);
 }
 
+.recipe__prep-container h2 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
 .recipe__list-content{
     display: flex;
     flex-direction: column;
